@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<movie width="800" height="600" framerate="30" frames="1" as3="1" version="10">
+   <frame>
+      <library>
+         <clip id="Cloud1_0" import="src/svg/cloud1_0.svg"/>
+         <clip id="Cloud1_1" import="src/svg/cloud1_1.svg"/>
+         <clip id="Cloud1_2" import="src/svg/cloud1_2.svg"/>
+         <clip id="Cloud1_3" import="src/svg/cloud1_3.svg"/>
+         <clip id="Cloud1_4" import="src/svg/cloud1_4.svg"/>
+         <clip id="Cloud1_5" import="src/svg/cloud1_5.svg"/>
+		 
+         <clip id="Cloud2" import="src/svg/cloud2.svg"/>
+         <clip id="Cloud3" import="src/svg/cloud3.svg"/>
+         <clip id="Bushes1" import="src/svg/bushes1.svg"/>
+         <clip id="Tree1" import="src/svg/tree1.svg"/>
+         <clip id="Rock1" import="src/svg/rock1.svg"/>
+         <clip id="Grass1" import="src/svg/grass1.svg"/>
+         <clip id="Grass2" import="src/svg/grass2.svg"/>
+		 
+         <clip id="Cloud1">
+			<frame name="frame0"><place id="Cloud1_0" depth="1"/></frame>
+			<frame name="frame1"><place id="Cloud1_1" depth="1"/></frame>
+			<frame name="frame2"><place id="Cloud1_2" depth="1"/></frame>
+			<frame name="frame3"><place id="Cloud1_3" depth="1"/></frame>
+			<frame name="frame4"><place id="Cloud1_4" depth="1"/></frame>
+			<frame name="frame5"><place id="Cloud1_5" depth="1"/></frame>
+		 </clip>
+		 
+		 
+         <clip id="Bird1_1" import="src/svg/bird1_1.svg"/>
+         <clip id="Bird1_2" import="src/svg/bird1_2.svg"/>
+         <clip id="Bird1">
+			<frame name="frame0">
+				<place id="Bird1_1" depth="1"/>
+			</frame>
+			<frame name="frame1">
+				<place id="Bird1_2" depth="1"/>
+			</frame>
+		 </clip>
+		 
+         <clip id="o_1" import="src/svg/o_1.svg"/>
+         <clip id="o_2" import="src/svg/o_2.svg"/>
+         <clip id="o_3" import="src/svg/o_3.svg"/>
+         <clip id="p_1" import="src/svg/p_1.svg"/>
+		 <clip id="e_1" import="src/svg/e_1.svg"/>
+		 <clip id="e_2" import="src/svg/e_2.svg"/>
+		 <clip id="e_3" import="src/svg/e_3.svg"/>
+         <clip id="r_1" import="src/svg/r_1.svg"/>
+         <clip id="c_1" import="src/svg/c_1.svg"/>
+         <clip id="c_2" import="src/svg/c_2.svg"/>
+         <clip id="c_3" import="src/svg/c_3.svg"/>
+         <clip id="t_1" import="src/svg/t_1.svg"/>
+         <clip id="t_2" import="src/svg/t_2.svg"/>
+         <clip id="t_3" import="src/svg/t_3.svg"/>
+         <clip id="i_1" import="src/svg/i_1.svg"/>
+         <clip id="n_1" import="src/svg/n_1.svg"/>
+		 
+         <clip id="LetterP">
+			<frame name="frame0">
+				<place id="p_1" depth="1"/>
+			</frame>
+		 </clip>
+         <clip id="LetterE">
+			<frame name="frame0">
+				<place id="e_1" depth="1"/>
+			</frame>
+			<frame name="frame1">
+				<place id="e_2" depth="1"/>
+			</frame>
+			<frame name="frame2">
+				<place id="e_3" depth="1"/>
+			</frame>
+		 </clip>
+         <clip id="LetterR">
+			<frame name="frame0">
+				<place id="r_1" depth="1"/>
+			</frame>
+		 </clip>
+         <clip id="LetterC">
+			<frame name="frame0">
+				<place id="c_1" depth="1"/>
+			</frame>
+			<frame name="frame1">
+				<place id="c_2" depth="1"/>
+			</frame>
+			<frame name="frame2">
+				<place id="c_3" depth="1"/>
+			</frame>
+		 </clip>
+         <clip id="LetterT">
+			<frame name="frame0">
+				<place id="t_1" depth="1"/>
+			</frame>
+			<frame name="frame1">
+				<place id="t_2" depth="1"/>
+			</frame>
+			<frame name="frame2">
+				<place id="t_3" depth="1"/>
+			</frame>
+		 </clip>
+         <clip id="LetterI">
+			<frame name="frame0">
+				<place id="i_1" depth="1"/>
+			</frame>
+		 </clip>
+         <clip id="LetterO">
+			<frame name="frame0">
+				<place id="o_1" depth="1"/>
+			</frame>
+			<frame name="frame1">
+				<place id="o_2" depth="1"/>
+			</frame>
+			<frame name="frame2">
+				<place id="o_3" depth="1"/>
+			</frame>
+		 </clip>
+         <clip id="LetterN">
+			<frame name="frame0">
+				<place id="n_1" depth="1"/>
+			</frame>
+		 </clip>
+		 
+      </library>
+   </frame>
+</movie> 
