@@ -8,7 +8,7 @@ import flash.Lib;
  */
 class Global
 {
-	static public var textfilter:GlowFilter = new GlowFilter(/*0xffab49*/0, 0.7, 4, 4, 4);
+	static public var textfilter:GlowFilter = new GlowFilter(0, 0.7, 4, 4, 4);
 	
 	inline static public var BAR_LEVEL:Int = 6;
 	

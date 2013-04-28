@@ -24,7 +24,7 @@ import haxe.FastList;
 
 class Main extends Sprite
 {
-	static inline private var TEXT_FADE_TIME:Float = 0.001;
+	static inline private var TEXT_FADE_TIME:Float = 0.0005;
 	
 	private var m_fade:Sprite;
 	private var m_input:Input;
@@ -56,7 +56,7 @@ class Main extends Sprite
 		stage.addChild(this);
 		
 		m_fade=new Sprite();
-		m_fade.graphics.beginFill(0xFFFFFF);
+		m_fade.graphics.beginFill(0x0);
 		m_fade.graphics.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
 		m_fade.alpha = 1;
 		stage.addChild(m_fade);
