@@ -6,25 +6,22 @@ import flash.ui.Keyboard;
 
 /**
  * Input manager
- * @author 
+ * @author Al1
  */
 class Input
 {
-	static public var instance:Input=null;
-	
+	public var first:Bool;
 	public var left:Bool;
 	public var right:Bool;
-	public var up:Bool;
-	public var down:Bool;
 	
+	static public var instance:Input=null;
 	public function new() 
 	{
 		instance = this;
 		
+		first = false;
 		left = false;
 		right = false;
-		up = false;
-		down = false;
 		
 		Lib.current.stage.addEventListener(KeyboardEvent.KEY_DOWN, _keydown);
 		Lib.current.stage.addEventListener(KeyboardEvent.KEY_UP, _keyup);
@@ -32,25 +29,23 @@ class Input
 	
 	public function _keydown(a_event:KeyboardEvent):Void
 	{
-		if (a_event.keyCode == Keyboard.UP)
-			up = true;
-		else if (a_event.keyCode == Keyboard.DOWN)
-			down = true;
-		else if (a_event.keyCode == Keyboard.RIGHT)
+		if (a_event.keyCode == Keyboard.RIGHT || a_event.keyCode == Keyboard.D)
+		{
+			first = true;
 			right = true;
-		else if (a_event.keyCode == Keyboard.LEFT)
+		}
+		else if (a_event.keyCode == Keyboard.LEFT || a_event.keyCode == Keyboard.A || a_event.keyCode == Keyboard.Q)
+		{
+			first = true;
 			left = true;
+		}
 	}
 	
 	public function _keyup(a_event:KeyboardEvent):Void
 	{
-		if (a_event.keyCode == Keyboard.UP)
-			up = false;
-		else if (a_event.keyCode == Keyboard.DOWN)
-			down = false;
-		else if (a_event.keyCode == Keyboard.RIGHT)
+		if (a_event.keyCode == Keyboard.RIGHT || a_event.keyCode == Keyboard.D)
 			right = false;
-		else if (a_event.keyCode == Keyboard.LEFT)
+		else if (a_event.keyCode == Keyboard.LEFT || a_event.keyCode == Keyboard.A || a_event.keyCode == Keyboard.Q)
 			left = false;
 	}
 	
