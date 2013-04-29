@@ -114,7 +114,7 @@ class Bg extends Sprite
 			firstindex = Math.round(a_pos * m_lines_size) - m_lines_spread;
 			
 		var animate:Bool = Title.instance != null && Title.instance.animate == 1;
-		var normal:Bool = a_level > 0 && (m_type == 1 || !animate);
+		var normal:Bool = a_level <Global.PERCEPTION_LEVEL && (m_type == 1 || !animate);
 		for (j in 0...((m_lines_spread<<1)+1))
 		{
 			var linej:Int = (firstindex + (a_reverse?-j:j) + m_lines_size) % m_lines_size;
@@ -146,7 +146,7 @@ class Bg extends Sprite
 	
 	public function update(a_elapsed:Int, a_pos:Float=0):Void
 	{
-		var level:Int = (m_type==0)?Global.BAR_LEVEL:Math.floor(Scenario.instance.perception);
+		var level:Int = (m_type==0)?0:Math.floor(Scenario.instance.perception);
 		
 		graphics.clear();
 		

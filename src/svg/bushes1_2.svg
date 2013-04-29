@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="cloud1_2.svg">
+   sodipodi:docname="bushes1_1.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,17 +24,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="-106.85318"
-     inkscape:cy="1003.95"
+     inkscape:zoom="1.4"
+     inkscape:cx="-101.5918"
+     inkscape:cy="988.25763"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer4"
      showgrid="false"
      inkscape:window-width="1680"
      inkscape:window-height="988"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4358" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -43,23 +47,29 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     style="display:inline">
     <path
-       style="fill:#f5f5f5;fill-opacity:1;stroke:none;stroke-opacity:1"
-       d="M 4.2857143,-32.280679 C -18.917994,-44.078255 -54.489783,-5.6261794 -37.857143,-0.49496501 -54.305872,24.48249 9.0948258,40.841713 20.357143,23.433607 35.297796,30.557138 65.913817,27.280803 73.571429,12.005035 76.282041,1.1436472 83.280782,-7.7982846 64.642857,-20.494966 61.389054,-32.656933 7.4041549,-37.375981 4.2857143,-32.280679 z"
+       style="fill:#27ac18;fill-opacity:1;stroke:none"
+       d="m -6.505823,-64.094409 c -12.853162,-4.483471 -29.880548,-1.087245 -33.992187,14.586969 -8.035699,-10.244563 -20.254193,21.060063 -7.359133,24.753648 -18.127402,0 -10.401947,23.6006674 6.307828,20.3333515 -8.116336,15.7405325 16.174614,9.579944 17.521746,7.514501 6.528921,6.8801211 48.204105,8.0638175 58.92981,-4.5467391 14.887288,8.7018991 34.682136,4.6985661 23.040776,-9.8503894 18.410678,3.1287135 1.430145,-7.262312 3.885969,-7.262312 17.577562,-0.962534 6.829401,-43.069325 -9.111309,-30.94206 -1.31695,-22.661643 -28.046634,-16.427822 -36.094795,-8.398557 -4.348388,-9.769866 -20.759907,-12.445274 -23.128705,-6.188412 z"
        id="path3802"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
+       sodipodi:nodetypes="ccccccccccc" />
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Calque" />
+     id="layer4"
+     inkscape:label="shadow"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="light" />
 </svg>

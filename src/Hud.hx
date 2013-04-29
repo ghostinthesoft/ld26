@@ -95,7 +95,7 @@ class Hud extends Sprite
 	
 	public function setPerception(a_value:Int):Void
 	{
-		var value:Float = a_value/Global.BAR_LEVEL;
+		var value:Float = a_value/Global.PERCEPTION_LEVEL;
 		if (value < 0)
 			value = 0;
 		if (value > 1)
@@ -106,7 +106,7 @@ class Hud extends Sprite
 	
 	public function setConcentration(a_value:Float):Void
 	{
-		a_value /= Global.BAR_LEVEL;
+		a_value /= Global.CONCENTRATION_LEVEL;
 		if (a_value < 0)
 			a_value = 0;
 		if (a_value > 1)

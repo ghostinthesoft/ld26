@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="rock.svg">
+   sodipodi:docname="bird1_0.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,10 +25,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="77.432536"
-     inkscape:cy="1003.95"
+     inkscape:cx="36.061783"
+     inkscape:cy="1009.3887"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:window-width="1680"
      inkscape:window-height="988"
@@ -48,17 +48,18 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer3"
+     inkscape:label="Calque#1">
     <path
-       style="fill:#6a4600;fill-opacity:1;stroke:none"
-       d="M -5.5688661,7.447441 C -7.1433009,7.41142 -8.3788003,3.0648569 -7.8289783,0.86204988 -6.8960358,-2.8756911 1.0112684,-9.492708 3.9852444,-7.5068853 c 1.137071,0.7592606 1.407711,2.7303172 2.671041,3.2926957 0.961413,0.4279783 2.490951,-0.6004373 3.3901686,0 1.996996,1.3334614 5.295452,8.0196228 3.287435,10.7012616 -3.6612586,4.88949 -13.93752362,-0.365811 -18.9027551,0.960369 z"
-       id="path3812"
-       inkscape:connector-curvature="0" />
+       sodipodi:type="arc"
+       style="fill:#9d9384;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path3889"
+       sodipodi:cx="-1.6071428"
+       sodipodi:cy="-29.244955"
+       sodipodi:rx="44.464287"
+       sodipodi:ry="42.67857"
+       d="m 42.857144,-29.244955 a 44.464287,42.67857 0 1 1 -88.928574,0 44.464287,42.67857 0 1 1 88.928574,0 z"
+       transform="translate(4.2857143,0.71428571)" />
   </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Calque" />
 </svg>

@@ -51,11 +51,13 @@ class Element extends Sprite
 	public var movex:Float;
 	public var posy:Float;
 	public var posd:Float;
-	
+	public var keys:Bool;
 	public var disturber:Bool;
 	
 	private var m_type:String;
 	private var m_time:Int;
+
+	private var m_place:Bool;
 	
 	private var m_wait:Int;
 	private var m_max:Int;
@@ -66,10 +68,13 @@ class Element extends Sprite
 	//////////////////////////////////////////
 	private var m_display:MovieClip;
 	
-	public function new(a_type:String, a_disturber:Bool=false) 
+	public function new(a_type:String, a_disturber:Bool=false, a_place:Bool=false) 
 	{
 		super();
 
+		// no key in the element
+		keys = false;
+		
 		// some elements are moving
 		movex = 0;
 		
@@ -79,6 +84,12 @@ class Element extends Sprite
 		// create display
 		m_type = a_type;
 		m_display = Type.createInstance(Type.resolveClass(m_type), []);
+		var scale:Float;
+		if (a_type.indexOf("Bushes") == 0)
+			scale = Math.random() * 0.4 + 0.6;
+		else
+			scale = Math.random() * 0.1 + 0.9;
+		m_display.scaleX = m_display.scaleY = scale;
 		addChild(m_display);
 		visible = false;
 		
@@ -90,7 +101,10 @@ class Element extends Sprite
 			m_wait = 3000;
 		}
 		else
-			m_wait = 0;
+		{
+			m_frame = 100;
+			m_wait = 200;
+		}
 		m_max = m_display.totalFrames * m_frame;
 		m_display.stop();
 		
@@ -99,11 +113,12 @@ class Element extends Sprite
 		id = globalId++;
 		
 		// element interaction
+		m_place = a_place;
 		disturber = a_disturber;
-		mouseEnabled = mouseChildren = disturber;
-		if (disturber)
+		var needListener:Bool = (disturber || m_place);
+		mouseEnabled = mouseChildren = needListener;
+		if (needListener)
 			m_display.addEventListener(MouseEvent.CLICK, _onClick);
-		
 	}
 	
 	// get appearing message
@@ -111,50 +126,57 @@ class Element extends Sprite
 	{
 		if (m_type.indexOf("Bird") == 0)
 		{
-			return "you can hear a bird";
+			return "you hear a bird";
 		}
 		return "what's this ?";
 	}
 
 	public function _onClick(a_event:MouseEvent)
 	{
-		m_display.removeEventListener(MouseEvent.CLICK, _onClick);
-		m_fading = true;
+		if (Scenario.instance.ready)
+		{
+			if (disturber)
+			{
+				// click on a disturber
+				m_display.removeEventListener(MouseEvent.CLICK, _onClick);
+				m_fading = true;
+			}
+			else if (Scenario.instance.perception==Global.PERCEPTION_LEVEL)
+			{
+				// click on a place to find key
+				Scenario.instance.checked = keys?1:2;
+			}
+		}
 	}
 	
 	public function _updateAnim(a_elapsed:Int):Void
 	{
 		m_time += a_elapsed;
 		
-		// temp
-		if (disturber)
+		var frame:Int = 1 + Scenario.instance.perception;
+		if (frame == 1 && m_display.totalFrames>5)
 		{
 			if (m_time > m_max)
-				m_time = -Math.floor(Math.random() * m_wait);
-				
-			var frame:Int = m_time;
-			if (frame < 0)
-				frame = 0;
-			
-			m_display.gotoAndStop(frame);
-		}
-		else
-		{
-			/*if (m_type.indexOf("Cloud") == 0)
-				trace(m_display.totalFrames);*/
-			var frame:Int = 1+Scenario.instance.perception;
-			if (m_display.currentFrame != frame)
 			{
-				if (frame > m_display.totalFrames)
-					frame = m_display.totalFrames;
-				m_display.gotoAndStop(frame);
+				m_time = -Math.floor(Math.random() * m_wait);
 			}
+			
+			if (m_time >= 0)
+				frame = 6;
+		}
+		
+		if (m_display.currentFrame != frame)
+		{
+			if (frame > m_display.totalFrames)
+				frame = m_display.totalFrames;
+			m_display.gotoAndStop(frame);
 		}
 	}
 	
 	public function update(a_elapsed:Int, a_origin:Float):Void
 	{
-		if (movex > 0)
+		// scene is animated only when perception is the lowest
+		if (Scenario.instance.perception==0 && movex > 0)
 		{
 			posx += movex * a_elapsed;
 			while (posx > 1)
@@ -187,10 +209,10 @@ class Element extends Sprite
 			var viewz:Float = Global.getZ(angle, posd);
 			var viewx:Float = Global.getX(angle, posd);
 			
-			var scale:Float = (Scenario.instance.perception == 0)?1.0:( posd / viewz);
+			var scale:Float = (Scenario.instance.perception == Global.PERCEPTION_LEVEL)?1.0:( posd / viewz);
 			scaleX = scaleY = scale;
 			x = Global.getScreenX(viewx, viewz);
-			y = Global.getScreenY(posy, Scenario.instance.perception==0?posd:viewz);
+			y = Global.getScreenY(posy, Scenario.instance.perception==Global.PERCEPTION_LEVEL?posd:viewz);
 			
 			_updateAnim(a_elapsed);
 		}

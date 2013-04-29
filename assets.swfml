@@ -7,15 +7,33 @@
          <clip id="Cloud1_2" import="src/svg/cloud1_2.svg"/>
          <clip id="Cloud1_3" import="src/svg/cloud1_3.svg"/>
          <clip id="Cloud1_4" import="src/svg/cloud1_4.svg"/>
-         <clip id="Cloud1_5" import="src/svg/cloud1_5.svg"/>
 		 
-         <clip id="Cloud2" import="src/svg/cloud2.svg"/>
-         <clip id="Cloud3" import="src/svg/cloud3.svg"/>
-         <clip id="Bushes1" import="src/svg/bushes1.svg"/>
-         <clip id="Tree1" import="src/svg/tree1.svg"/>
-         <clip id="Rock1" import="src/svg/rock1.svg"/>
-         <clip id="Grass1" import="src/svg/grass1.svg"/>
-         <clip id="Grass2" import="src/svg/grass2.svg"/>
+         <clip id="Tree1_0" import="src/svg/tree1_0.svg"/>
+         <clip id="Tree1_1" import="src/svg/tree1_1.svg"/>
+         <clip id="Tree1_2" import="src/svg/tree1_2.svg"/>
+         <clip id="Tree1_3" import="src/svg/tree1_3.svg"/>
+         <clip id="Tree1_4" import="src/svg/tree1_4.svg"/>
+		 
+         <clip id="Grass1_0" import="src/svg/grass1_0.svg"/>
+         <clip id="Grass1_1" import="src/svg/grass1_1.svg"/>
+         <clip id="Grass1_2" import="src/svg/grass1_2.svg"/>
+         <clip id="Grass1_3" import="src/svg/grass1_3.svg"/>
+         <clip id="Grass1_4" import="src/svg/grass1_4.svg"/>
+         <clip id="Grass1_5" import="src/svg/grass1_5.svg"/>
+		 
+         <clip id="Bushes1_0" import="src/svg/bushes1_0.svg"/>
+         <clip id="Bushes1_1" import="src/svg/bushes1_1.svg"/>
+         <clip id="Bushes1_2" import="src/svg/bushes1_2.svg"/>
+         <clip id="Bushes1_3" import="src/svg/bushes1_3.svg"/>
+         <clip id="Bushes1_4" import="src/svg/bushes1_4.svg"/>
+         <clip id="Bushes1_5" import="src/svg/bushes1_5.svg"/>
+		 
+         <clip id="Bird1_0" import="src/svg/bird1_0.svg"/>
+         <clip id="Bird1_1" import="src/svg/bird1_1.svg"/>
+         <clip id="Bird1_2" import="src/svg/bird1_2.svg"/>
+         <clip id="Bird1_3" import="src/svg/bird1_3.svg"/>
+         <clip id="Bird1_4" import="src/svg/bird1_4.svg"/>
+         <clip id="Bird1_5" import="src/svg/bird1_5.svg"/>
 		 
          <clip id="Cloud1">
 			<frame name="frame0"><place id="Cloud1_0" depth="1"/></frame>
@@ -23,19 +41,38 @@
 			<frame name="frame2"><place id="Cloud1_2" depth="1"/></frame>
 			<frame name="frame3"><place id="Cloud1_3" depth="1"/></frame>
 			<frame name="frame4"><place id="Cloud1_4" depth="1"/></frame>
-			<frame name="frame5"><place id="Cloud1_5" depth="1"/></frame>
+		 </clip>
+         <clip id="Tree1">
+			<frame name="frame0"><place id="Tree1_0" depth="1"/></frame>
+			<frame name="frame1"><place id="Tree1_1" depth="1"/></frame>
+			<frame name="frame2"><place id="Tree1_2" depth="1"/></frame>
+			<frame name="frame3"><place id="Tree1_3" depth="1"/></frame>
+			<frame name="frame4"><place id="Tree1_4" depth="1"/></frame>
+		 </clip>
+         <clip id="Bushes1">
+			<frame name="frame0"><place id="Bushes1_0" depth="1"/></frame>
+			<frame name="frame1"><place id="Bushes1_1" depth="1"/></frame>
+			<frame name="frame2"><place id="Bushes1_2" depth="1"/></frame>
+			<frame name="frame3"><place id="Bushes1_3" depth="1"/></frame>
+			<frame name="frame4"><place id="Bushes1_4" depth="1"/></frame>
+		 </clip>
+         <clip id="Grass1">
+			<frame name="frame0"><place id="Grass1_0" depth="1"/></frame>
+			<frame name="frame1"><place id="Grass1_1" depth="1"/></frame>
+			<frame name="frame2"><place id="Grass1_2" depth="1"/></frame>
+			<frame name="frame3"><place id="Grass1_3" depth="1"/></frame>
+			<frame name="frame4"><place id="Grass1_4" depth="1"/></frame>
+			<frame name="frame5"><place id="Grass1_5" depth="1"/></frame>
 		 </clip>
 		 
 		 
-         <clip id="Bird1_1" import="src/svg/bird1_1.svg"/>
-         <clip id="Bird1_2" import="src/svg/bird1_2.svg"/>
          <clip id="Bird1">
-			<frame name="frame0">
-				<place id="Bird1_1" depth="1"/>
-			</frame>
-			<frame name="frame1">
-				<place id="Bird1_2" depth="1"/>
-			</frame>
+			<frame name="frame0"><place id="Bird1_0" depth="1"/></frame>
+			<frame name="frame1"><place id="Bird1_1" depth="1"/></frame>
+			<frame name="frame2"><place id="Bird1_2" depth="1"/></frame>
+			<frame name="frame3"><place id="Bird1_3" depth="1"/></frame>
+			<frame name="frame4"><place id="Bird1_4" depth="1"/></frame>
+			<frame name="frame5"><place id="Bird1_5" depth="1"/></frame>
 		 </clip>
 		 
          <clip id="o_1" import="src/svg/o_1.svg"/>

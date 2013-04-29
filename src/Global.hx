@@ -10,7 +10,8 @@ class Global
 {
 	static public var textfilter:GlowFilter = new GlowFilter(0, 0.7, 4, 4, 4);
 	
-	inline static public var BAR_LEVEL:Int = 6;
+	inline static public var PERCEPTION_LEVEL:Int = 4;
+	inline static public var CONCENTRATION_LEVEL:Int = 10;
 	
 	inline static public var MAINCOLOR:Int = 0xffab49;
 	

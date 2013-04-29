@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="cloud1_2.svg">
+   sodipodi:docname="bird1_2.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,10 +25,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="-106.85318"
-     inkscape:cy="1003.95"
+     inkscape:cx="36.061783"
+     inkscape:cy="1009.3887"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:window-width="1680"
      inkscape:window-height="988"
@@ -43,23 +43,19 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer3"
+     inkscape:label="Calque#1">
     <path
-       style="fill:#f5f5f5;fill-opacity:1;stroke:none;stroke-opacity:1"
-       d="M 4.2857143,-32.280679 C -18.917994,-44.078255 -54.489783,-5.6261794 -37.857143,-0.49496501 -54.305872,24.48249 9.0948258,40.841713 20.357143,23.433607 35.297796,30.557138 65.913817,27.280803 73.571429,12.005035 76.282041,1.1436472 83.280782,-7.7982846 64.642857,-20.494966 61.389054,-32.656933 7.4041549,-37.375981 4.2857143,-32.280679 z"
-       id="path3802"
+       style="fill:#9d9384;fill-opacity:1;stroke:none"
+       d="m 47.878027,-54.048443 c -1.23622,-2.448257 -3.813455,-8.93477 -6.735877,-12.691615 -2.922421,-3.756844 -6.190029,-4.78402 -11.664138,-3.45646 -8.27421,-1.195014 -19.8768057,28.678055 -21.5745823,29.266803 -16.4463114,4.273893 -26.4928247,11.527758 -38.8133497,24.609042 -8.974654,8.7561687 -17.422471,16.63532809 -26.196853,24.2511555 11.503142,-3.775483 20.431728,-3.282083 30.390597,-2.8202153 6.829891,0.253299 15.534067,0.9023375 22.4184146,7.0173108 3.86291779,-10.854505 22.5232234,-13.0344301 29.4023824,-23.990325 4.881032,-7.773632 7.982008,-17.219204 8.274766,-26.065233 0.281103,-8.493865 0.112131,-28.340334 14.49864,-16.120463 z"
+       id="path5135"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
+       sodipodi:nodetypes="csccccccssc" />
   </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Calque" />
 </svg>
